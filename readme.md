@@ -1,6 +1,7 @@
-# Logtime Page
+## Logtime Page
 
-![Screenshot](screenshot.png)
+<img width="1189" alt="Screen Shot 2023-05-17 at 10 51 06 AM" src="https://github.com/emohamedd/logtime_front/assets/102475281/7d4b349b-3c46-4f8b-ba71-a7425d76ec73">
+
 
 ## Description
 The Logtime Page is a web page that allows users to track and calculate their study time in school. By providing a username, start date, and end date, the application calculates the duration of the study period and displays the login time.

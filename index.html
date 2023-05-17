@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <style>
+        .ui-datepicker {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 5px;
+            font-family: "Roboto", sans-serif;
+        }
+        .ui-datepicker-header {
+            background: linear-gradient(180deg, rgb(0, 0, 0), rgb(25, 190, 160));
+            color: #fff;
+            border: none;
+        }
+        .ui-datepicker-title {
+            font-size: 1rem;
+        }
+        .ui-datepicker-prev,
+        .ui-datepicker-next {
+            background: none;
+            border: none;
+            color: #fff;
+        }
+        .ui-datepicker-prev:hover,
+        .ui-datepicker-next:hover {
+            background: none;
+            border: none;
+            color: #fff;
+        }
+        .ui-datepicker-calendar {
+            border: none;
+        }
+        .ui-datepicker tbody td {
+            padding: 0.2rem;
+        }
+        .ui-datepicker-calendar .ui-state-default {
+            background: #f8f8f8;
+            border: none;
+        }
+        .ui-datepicker-calendar .ui-state-hover,
+        .ui-datepicker-calendar .ui-state-hover .ui-state-default {
+            background: #e0e0e0;
+            border: none;
+        }
+        .ui-datepicker-calendar .ui-state-active,
+        .ui-datepicker-calendar .ui-state-active .ui-state-default {
+            background: linear-gradient(180deg, rgb(0, 0, 0), rgb(25, 190, 160));
+            color: #fff;
+            border: none;
+        }
+    </style>
+    <script>
+        $(function() {
+            $("#start-date").datepicker();
+            $("#end-date").datepicker();
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="container-label">1337 MED<span></span></div>
+
+            <div class="container-icon">
+                <div class="circle"><i class="bi bi chevron-right"></i></div>
+            </div>
+
+            <div class="container-form">
+                <form>
+                    <label for="login">Login</label>
+                    <input type="text" id="email" placeholder="Enter Your Login" autofocus/>
+
+                    <label for="start-date">Start Date</label>
+                    <input type="text" id="start-date" placeholder="Select Start Date" readonly/>
+
+                    <label for="end-date">End Date</label>
+                    <input type="text" id="end-date" placeholder="Select End Date" readonly/>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
